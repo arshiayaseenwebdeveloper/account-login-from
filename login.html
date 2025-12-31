@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+     <style>
+        /* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Background */
+body {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #4f46e5, #9333ea);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Heading */
+h1 {
+  position: absolute;
+  top: 40px;
+  color: #ffffff;
+  font-size: 28px;
+}
+
+/* Form */
+form {
+  background: #ffffff;
+  padding: 30px;
+  width: 320px;
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  text-align: center;
+}
+
+/* Labels */
+label {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  font-size: 14px;
+  color: #333;
+}
+
+/* Inputs */
+input {
+  margin-top: 6px;
+  padding: 10px;
+  font-size: 14px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  outline: none;
+  transition: 0.2s;
+}
+
+/* Input focus */
+input:focus {
+  border-color: #4f46e5;
+  box-shadow: 0 0 0 2px rgba(79, 70, 229, 0.2);
+}
+
+/* Button */
+button {
+  width: 100%;
+  padding: 12px;
+  background: #4f46e5;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+/* Button hover */
+button:hover {
+  background: #4338ca;
+}
+
+/* Link */
+a {
+  display: inline-block;
+  margin-top: 10px;
+  color: #4f46e5;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+     </style>
+</head>
+<body>
+
+    <h1>Login form</h1>
+    
+<form action="" id="login_form">
+
+    <label for="">Email:
+<input type="email" name = "" id="email">
+</label>
+<br><br>
+
+<label for="">Password:
+<input type="password" name = "" id="password">
+</label>
+<br><br>
+<button type="submit">Login</button>
+<br><br>
+<a href="account.html">Create account</a>
+
+</form>
+
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="app.js"></script>
+</body>
+</html>
